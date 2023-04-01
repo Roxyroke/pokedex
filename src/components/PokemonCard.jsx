@@ -1,3 +1,4 @@
+
 function PokemonCard() {
   const pokemonList = [
     {
@@ -25,5 +26,6 @@ function PokemonCard() {
     </div>
   );
 }
+
 
 export default PokemonCard;
