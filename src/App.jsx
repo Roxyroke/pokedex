@@ -20,7 +20,7 @@ const pokemon = pokemonList[0]
 
   return (
   <div>
- <PokemonCard pokemon = {pokemon.name}/>
+ <PokemonCard pokemon = {pokemonList[0]}/>
 </div>
   )
 }
