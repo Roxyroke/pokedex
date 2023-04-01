@@ -1,12 +1,21 @@
- function PokemonCard({pokemon}) {
+ import React from "react";
+import PropTypes from "prop-types";
 
- return 
-<div>
-  <figure>
-    {pokemon.name ==="bulbasaur" ?<img src={pokemon.imgSrc} alt={pokemon.name}/>:(<p>???</p>)},
-    <figcaption>{pokemon.name}</figcaption>
- </figure>
- </div>
-  };
+function PokemonCard({ pokemon }) {
+
+    return <div>
+        <figure>
+            {pokemon.name === "bulbasaur" ? <img src={pokemon.imgSrc} /> : <p>???</p>}
+            <figcaption>{pokemon.name}</figcaption>
+        </figure>
+    </div>;
+}
+
+PokemonCard.propTypes = {
+    pokemon: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        imgSrc: PropTypes.string.isRequiered,
+    })
+}
 
 export default PokemonCard;
