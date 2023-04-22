@@ -1,9 +1,10 @@
-import "./App.css";
-import PokemonCard from "./components/PokemonCard"; 
-import { useState } from "react";
 
-function App() 
-{
+// import { useState } from 'react'
+import PokemonCard from "./components/PokemonCard";
+import NavBar from "./components/NavBar";
+
+
+
 
 const pokemonList = [
   {
@@ -45,7 +46,6 @@ const pokemonList = [
 }
 
 export default App;
-
 
 
 
